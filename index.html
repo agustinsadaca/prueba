@@ -218,36 +218,41 @@
                         <h3>Contactanos</b></h3>
 
                     </div>
+                
                     <div class="col-md-6 mt-4">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Nombre">
+                        <form method="POST" id="contact-form" name="contact-form" 
+                            action="enviar.php">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Apellido" id="Apellido" placeholder="Apellido" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="Email" id="Email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Mensaje" id="Mensaje" placeholder="Mensaje" required>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" name="submit" value="Enviar">
+                                    <!-- class="btn btn-primary full-width" -->
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Apellido">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="" placeholder="Email">
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" id=""
-                                        placeholder="Numero de telefono (optcional)">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <a href="" class="btn btn-primary full-width">Enviar</a>
-                            </div>
-                        </div>
+                        </form>
+                        
                     </div>
+                    
                 </div>
             </div>
         </section>
